@@ -1,0 +1,10 @@
+<p>registration works!</p>
+
+<form [formGroup]="registrationGroup" (ngSubmit)="registrationSubmit(registrationGroup.value)">
+    <input type="text" formControlName="userName" name="userName" />
+    <input type="password" name="password" formControlName="password" />
+    <input type="email" name="emailId" formControlName="emailId" />
+
+    <input type="submit" name="Register" value="Register" />
+
+</form>

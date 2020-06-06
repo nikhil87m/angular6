@@ -1,0 +1,20 @@
+<p>login-component works!</p>
+
+<form #userForm1=ngForm (ngSubmit)="loginCheck(userForm1.value)" >
+Enter your user name:<input type="text" name="userName" placeholder="Enter your username" ngModel/>
+<br/>
+Enter your password:<input type="password" name="password" placeholder="Enter your password" ngModel/>
+<br/>
+<input type="submit" name="submit" value="Login"/>
+
+</form>
+
+<span appChangeText>Your Name : {{name | lowercase | uppercase }}  </span>
+<b>{{6589.23 | currency:"INR":false}}</b><br/>
+<div>
+<h1>Json Pipe</h1>
+<b>{{ jsonval | json }}</b>
+</div>
+
+<h1>Custom Pipe {{todaydate}}</h1>
+<b>Square root of 25 is: {{25 | sqrt}}</b>
